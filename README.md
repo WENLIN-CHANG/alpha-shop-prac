@@ -2,7 +2,7 @@
 ALPHA CAMP Season 3 Frontend Assignment 1
 
 ### This project is currently built on
-- JavaScript
+- HTML
 - SASS/SCSS
 
 ###  Install dependency
