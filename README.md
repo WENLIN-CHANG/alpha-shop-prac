@@ -6,7 +6,7 @@ ALPHA CAMP Season 3 Frontend Assignment 1
 - SASS/SCSS
 
 ###  Install dependency
-npm install
+`npm install`
 
 ### How to view webpage
 1. Right click index.html
