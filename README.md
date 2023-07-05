@@ -15,6 +15,7 @@ npm install
 
 ### How to compile SCSS into CSS using SASS
 `sass --watch ./styles/main.scss main.css`
+
 This command will run sass to watch any changes to the scss files, and update main.css accordingly when changes occur.
 
 ### Project Directory Explanation
