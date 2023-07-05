@@ -9,9 +9,9 @@ ALPHA CAMP Season 3 Frontend Assignment 1
 npm install
 
 ### How to view webpage
-Right click index.html
-Copy path
-Open a window in your browser and go to the copied path
+1. Right click index.html
+2. Copy path
+3. Open a window in your browser and go to the copied path
 
 ### How to compile SCSS into CSS using SASS
 `sass --watch ./styles/main.scss main.css`
