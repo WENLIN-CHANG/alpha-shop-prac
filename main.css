@@ -661,8 +661,8 @@ section.progress-container .progress-group {
 section.progress-container .progress-group .progress-icon {
   display: inline-block;
   position: relative;
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 27px;
   margin-right: 8px;
   border-radius: 50%;
 }
@@ -939,10 +939,9 @@ section.button-group button {
   border-width: 0px;
   padding: 0px;
 }
-section.button-group button > svg {
+section.button-group button > object {
   width: 24px;
   height: 24px;
-  margin: 12px;
 }
 section.button-group button.prev {
   background-color: transparent;
@@ -950,7 +949,7 @@ section.button-group button.prev {
   font-weight: 400;
   color: #000000;
 }
-section.button-group button.prev > object svg {
+section.button-group button.prev > object {
   margin-right: 12px;
 }
 section.button-group button.next {
@@ -962,7 +961,7 @@ section.button-group button.next {
   color: #FFFFFF;
   margin-left: auto;
 }
-section.button-group button.next > object svg {
+section.button-group button.next > object {
   margin-left: 12px;
 }
 
@@ -1134,8 +1133,8 @@ footer.site-footer .footer-container .footer-logo-container {
   display: flex;
   left: 0;
   right: 0;
-  height: 31px;
-  width: 175.5px;
+  height: 32px;
+  width: 172px;
 }
 footer.site-footer .footer-container .footer-logo-container img {
   height: 100%;
@@ -1170,7 +1169,7 @@ footer.site-footer .footer-section .section-content .page-link {
   cursor: pointer;
 }
 footer.site-footer .footer-section .section-content .tel-info {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   line-height: 16px;

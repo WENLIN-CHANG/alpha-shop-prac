@@ -72,8 +72,8 @@ section.progress-container {
         .progress-icon {
             display: inline-block;
             position: relative;
-            width: 24px;
-            height: 24px;
+            width: 27px;
+            height: 27px;
             margin-right: 8px;
             border-radius: 50%;
 
@@ -351,10 +351,9 @@ section.button-group {
         border-width: 0px;
         padding: 0px;
 
-        & > svg {
+        & > object {
             width: 24px;
             height: 24px;
-            margin: 12px;
         }
 
         &.prev {
@@ -363,7 +362,7 @@ section.button-group {
             font-weight: 400;
             color: #000000;
 
-            > object svg {
+            > object {
                 margin-right: 12px;
             }
         }
@@ -376,7 +375,7 @@ section.button-group {
             color: #FFFFFF;
             margin-left: auto;
 
-            > object svg {
+            > object {
                 margin-left: 12px;
             }
         }
