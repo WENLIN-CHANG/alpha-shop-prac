@@ -20,6 +20,9 @@ This command will run sass to watch any changes to the scss files, and update ma
 
 ### Project Directory Explanation
 /styles - CSS styles
+
 /public - root directory of static files
+
 /public/icons - SVG icons
-/public/images - pictures
+
+/public/images - other images including preview pictures
