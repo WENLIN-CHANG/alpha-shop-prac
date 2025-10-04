@@ -13,22 +13,13 @@ function Step1({}: Step1Props){
     address: ''
   })
 
-  // 處理 input 變化
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  // 處理所有表單欄位變化（input 和 select 都用這個）
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target
-    setFormData({
-      ...formData,
+    setFormData(prev => ({
+      ...prev,
       [name]: value
-    })
-  }
-
-  // 處理 select 變化
-  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const { name, value } = e.target
-    setFormData({
-      ...formData,
-      [name]: value
-    })
+    }))
   }
 
   return (
@@ -44,7 +35,7 @@ function Step1({}: Step1Props){
               <select
                 name="title"
                 value={formData.title}
-                onChange={handleSelectChange}
+                onChange={handleChange}
               >
                 <option value="mr">先生</option>
                 <option value="ms">女士</option>
@@ -61,7 +52,7 @@ function Step1({}: Step1Props){
               name="name"
               placeholder="請輸入姓名"
               value={formData.name}
-              onChange={handleInputChange}
+              onChange={handleChange}
             />
           </div>
         </div>
@@ -75,7 +66,7 @@ function Step1({}: Step1Props){
               name="phone"
               placeholder="請輸入行動電話"
               value={formData.phone}
-              onChange={handleInputChange}
+              onChange={handleChange}
             />
           </div>
           <div className="input-group input-w-lg-3 input-w-sm-full">
@@ -85,7 +76,7 @@ function Step1({}: Step1Props){
               name="email"
               placeholder="請輸入電子郵件"
               value={formData.email}
-              onChange={handleInputChange}
+              onChange={handleChange}
             />
           </div>
         </div>
@@ -98,7 +89,7 @@ function Step1({}: Step1Props){
               <select
                 name="city"
                 value={formData.city}
-                onChange={handleSelectChange}
+                onChange={handleChange}
                 required
               >
                 <option value="">請選擇縣市</option>
@@ -141,7 +132,7 @@ function Step1({}: Step1Props){
               name="address"
               placeholder="請輸入地址"
               value={formData.address}
-              onChange={handleInputChange}
+              onChange={handleChange}
             />
           </div>
         </div>
