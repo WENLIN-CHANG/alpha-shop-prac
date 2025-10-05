@@ -2,6 +2,7 @@ import { useState } from "react"
 import { CheckoutStep } from "./types"
 import StepProgress from "./components/StepProgress"
 import Step1 from "./components/Step1"
+import Step2 from "./components/Step2"
 import ProgressControl from "./components/ProgressControl"
 
 
@@ -34,6 +35,7 @@ function App() {
 
       {/* 表單區域 */}
       {currentStep === 'address' && <Step1 />}
+      {currentStep === 'shipping' && <Step2 />}
 
       <ProgressControl
         onNext={handleNext}
