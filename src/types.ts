@@ -11,9 +11,17 @@ export type Title = 'mr' | 'ms' | 'mx'
 export type AddressForm = {
   // "object type"（物件型別）
   title: Title          // 稱謂（只能是 'mr' | 'ms' | 'mx'）
-  name: string         
-  phone: string        
-  email: string       
-  city: string      
-  address: string     
+  name: string
+  phone: string
+  email: string
+  city: string
+  address: string
+}
+
+// 信用卡表單資料
+export type CreditCardForm = {
+  cardholderName: string   
+  cardNumber: string       
+  expiryDate: string       
+  cvc: string          
 }
